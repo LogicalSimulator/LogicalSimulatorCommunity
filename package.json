@@ -1,0 +1,43 @@
+{
+  "name": "logical-simulator-circuits",
+  "version": "0.1.0",
+  "description": "All example and community circuits for Logical Simulator.",
+  "keywords": [
+    "logical",
+    "simulator",
+    "logical-simulator",
+    "logical simulator",
+    "logic",
+    "logic gate",
+    "logic gates",
+    "logic gate simulator",
+    "example",
+    "example circuit",
+    "community",
+    "community circuit",
+    "repository",
+    "circuit repository",
+    "example circuit repository",
+    "community circuit repository"
+  ],
+  "homepage": "https://github.com/UnsignedArduino/LogicalSimulatorCircuits",
+  "bugs": "https://github.com/UnsignedArduino/LogicalSimulatorCircuits/issues",
+  "license": "LGPL-2.1-or-later",
+  "author": {
+    "name": "UnsignedArduino",
+    "email": "UnsignedArduino@outlook.com",
+    "url": "https://github.com/UnsignedArduino"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UnsignedArduino/LogicalSimulatorCircuits.git"
+  },
+  "private": true,
+  "scripts": {
+    "format": "npx prettier --check .",
+    "writeFormat": "npx prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
