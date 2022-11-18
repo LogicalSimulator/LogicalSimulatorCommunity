@@ -1,0 +1,7 @@
+{
+  "allSaves": {
+    "Four bit multiplier": "fourBitMultiplier",
+    "Four bit multiplier, no ICs": "fourBitMultiplierNoICs",
+    "Faster four bit multiplier": "fasterFourBitMultiplier"
+  }
+}
