@@ -1,6 +1,6 @@
 {
   "allSaves": {
     "Four bit adder": "fourBitAdder",
-    "Eight bit adder": "eightBitAdder"
+    "Eight bit adder and subtractor": "eightBitAdderSubtractor"
   }
 }
