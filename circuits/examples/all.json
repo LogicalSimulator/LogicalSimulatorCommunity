@@ -2,6 +2,7 @@
   "allSaves": {
     "Four bit adder": "fourBitAdder",
     "Eight bit adder and subtractor": "eightBitAdderSubtractor",
-    "Eight-bit serial-in parallel-out shift register": "eightBitSIPOShiftRegister"
+    "Eight-bit serial-in parallel-out shift register": "eightBitSIPOShiftRegister",
+    "D flip-flop": "dFlipFlop"
   }
 }
