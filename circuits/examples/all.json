@@ -4,6 +4,7 @@
     "Eight bit adder and subtractor": "eightBitAdderSubtractor",
     "Eight-bit serial-in parallel-out shift register": "eightBitSIPOShiftRegister",
     "Eight-bit parallel-in serial-out shift register": "eightBitPISOShiftRegister",
-    "D flip-flop": "dFlipFlop"
+    "D flip-flop": "dFlipFlop",
+    "Eight-bit memory cell": "eightBitMemoryCell"
   }
 }
