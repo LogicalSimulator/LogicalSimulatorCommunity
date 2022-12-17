@@ -1,0 +1,4 @@
+# Extensions to install
+vscode:
+  extensions:
+    - esbenp.prettier-vscode
