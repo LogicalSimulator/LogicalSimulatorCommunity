@@ -4,6 +4,7 @@
     "Four bit multiplier, no ICs": "fourBitMultiplierNoICs",
     "Faster four bit multiplier": "fasterFourBitMultiplier",
     "Square root": "squareRoot",
-    "Four byte memory array": "fourByteMemoryArray"
+    "Four byte memory array": "fourByteMemoryArray",
+    "Multiple shift registers": "multipleShiftRegisters"
   }
 }
