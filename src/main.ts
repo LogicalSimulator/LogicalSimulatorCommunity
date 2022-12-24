@@ -67,6 +67,22 @@ checkPaths(
 createDirectory(metadataDirPath, args.force);
 createEmptyFiles([newSavePath, descriptionPath]);
 
+console.log(`Parsing JSON from ${allJSONPath}`);
+const all = JSON.parse(fs.readFileSync(allJSONPath, { encoding: "utf8" }));
+if (all.allSaves[args.name] != undefined) {
+  if (args.force) {
+    console.warn(`Key ${args.name} already exists, overwriting!`);
+  } else {
+    console.error(`Key ${args.name} already exists!`);
+    process.exit(1);
+  }
+}
+all.allSaves[args.name] = args.key;
+console.log(`Writing new JSON to ${allJSONPath}`);
+fs.writeFileSync(allJSONPath, JSON.stringify(all, null, 2) + "\n", {
+  encoding: "utf8",
+});
+
 console.info("Done!");
 console.info(`Copy the description to ${descriptionPath}`);
 console.info(`Copy the save code to ${newSavePath}`);
