@@ -83,6 +83,21 @@ fs.writeFileSync(allJSONPath, JSON.stringify(all, null, 2) + "\n", {
   encoding: "utf8",
 });
 
+const info = {
+  author: {
+    name: args.author,
+    githubProfileURL: args.githubProfileURL,
+    originalPostURL: args.originalPostURL,
+  },
+  save: {
+    title: args.name,
+  },
+};
+console.log(`Writing info to ${infoPath}`);
+fs.writeFileSync(infoPath, JSON.stringify(info, null, 2) + "\n", {
+  encoding: "utf8",
+});
+
 console.info("Done!");
 console.info(`Copy the description to ${descriptionPath}`);
 console.info(`Copy the save code to ${newSavePath}`);
