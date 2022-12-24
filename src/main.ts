@@ -1,5 +1,8 @@
-import yargs, { string } from "yargs";
+import yargs, { boolean, string } from "yargs";
 import { hideBin } from "yargs/helpers";
+import fs from "fs";
+import path from "path";
+import checkPaths from "./pathChecker";
 
 interface ProgramArguments {
   type: "example" | "community";
@@ -10,6 +13,7 @@ interface ProgramArguments {
   originalPostURL: string | undefined;
   // description: string | undefined;
   // save: string;
+  force: boolean | undefined;
 }
 
 const args: ProgramArguments = yargs(hideBin(process.argv))
@@ -26,6 +30,7 @@ const args: ProgramArguments = yargs(hideBin(process.argv))
     originalPostURL: { type: "string" },
     // description: { type: "string", alias: ["d"] },
     // save: { type: "string", alias: ["s"], demandOption: true },
+    force: { type: "boolean", alias: ["f"] },
   })
   .parseSync();
 
@@ -39,3 +44,24 @@ console.log(
     return result;
   })()}`
 );
+
+const cwd = process.cwd();
+console.log(`Current working directory: ${cwd}`);
+
+const typeDirPath = path.join(cwd, "circuits", args.type);
+const allJSONPath = path.join(typeDirPath, "all.json");
+const newSavePath = path.join(typeDirPath, "saves", args.key + ".txt");
+const metadataDirPath = path.join(typeDirPath, "metadata", args.key);
+const infoPath = path.join(metadataDirPath, "info.json");
+const descriptionPath = path.join(metadataDirPath, "description.html");
+
+checkPaths(
+  [
+    { path: allJSONPath, mustExist: true },
+    { path: newSavePath, mustExist: false },
+    { path: metadataDirPath, mustExist: false },
+  ],
+  args.force
+);
+
+process.exit(0);
