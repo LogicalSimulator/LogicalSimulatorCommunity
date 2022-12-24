@@ -5,7 +5,6 @@
     "Faster four bit multiplier": "fasterFourBitMultiplier",
     "Square root": "squareRoot",
     "Four byte memory array": "fourByteMemoryArray",
-    "Multiple shift registers": "multipleShiftRegisters",
-    "Countdown timer": "countdownTimer"
+    "Multiple shift registers": "multipleShiftRegisters"
   }
 }
