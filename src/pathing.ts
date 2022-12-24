@@ -5,7 +5,7 @@ interface PathToCheck {
   mustExist: boolean;
 }
 
-export default function checkPaths(
+export function checkPaths(
   paths: PathToCheck[],
   forceWrite?: boolean | undefined
 ): void {
@@ -31,4 +31,27 @@ export default function checkPaths(
       }
     }
   }
+}
+
+export function createEmptyFiles(paths: string[]): void {
+  for (const path of paths) {
+    console.log(`Creating empty file ${path}`);
+    fs.writeFileSync(path, "");
+  }
+}
+
+export function createDirectory(
+  path: string,
+  force?: boolean | undefined
+): void {
+  if (fs.existsSync(path)) {
+    if (force) {
+      console.warn(`Force option used, removing directory ${path}`);
+      fs.rmdirSync(path, { recursive: true });
+    } else {
+      console.error(`${path} already exists!`);
+      process.exit(1);
+    }
+  }
+  fs.mkdirSync(path);
 }

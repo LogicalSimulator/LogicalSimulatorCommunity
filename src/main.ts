@@ -2,7 +2,7 @@ import yargs, { boolean, string } from "yargs";
 import { hideBin } from "yargs/helpers";
 import fs from "fs";
 import path from "path";
-import checkPaths from "./pathChecker";
+import { checkPaths, createEmptyFiles, createDirectory } from "./pathing";
 
 interface ProgramArguments {
   type: "example" | "community";
@@ -63,5 +63,12 @@ checkPaths(
   ],
   args.force
 );
+
+createDirectory(metadataDirPath, args.force);
+createEmptyFiles([newSavePath, descriptionPath]);
+
+console.info("Done!");
+console.info(`Copy the description to ${descriptionPath}`);
+console.info(`Copy the save code to ${newSavePath}`);
 
 process.exit(0);
