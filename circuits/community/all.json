@@ -6,6 +6,7 @@
     "Square root": "squareRoot",
     "Four byte memory array": "fourByteMemoryArray",
     "Multiple shift registers": "multipleShiftRegisters",
+    "Countup timer": "countupTimer",
     "Countdown timer": "countdownTimer"
   }
 }
