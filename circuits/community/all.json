@@ -8,6 +8,7 @@
     "Multiple shift registers": "multipleShiftRegisters",
     "Countup timer": "countupTimer",
     "Countdown timer": "countdownTimer",
-    "One bit comparator": "oneBitComparator"
+    "One bit comparator": "oneBitComparator",
+    "Two bit comparator": "twoBitComparator"
   }
 }
