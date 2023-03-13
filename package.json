@@ -1,6 +1,6 @@
 {
   "name": "logical-simulator-circuits",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "All example and community circuits for Logical Simulator.",
   "keywords": [
     "logical",
@@ -34,9 +34,9 @@
   },
   "private": true,
   "scripts": {
-    "precompile": "tsc",
+    "compile": "tsc",
     "dev": "ts-node ./src/main.ts",
-    "generate": "node ./dist/main.js",
+    "logicalSimulatorCommunityCLI": "node ./dist/main.js",
     "lint": "next lint",
     "writeLint": "next lint --fix",
     "format": "yarn run prettier --check .",
