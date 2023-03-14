@@ -11,3 +11,5 @@ And as usual, there have been bug fixes in the simulator and this time, in the L
 The home page was also massively improved, now you have beautiful cards documentating features instead of images each with a different aspect ratio. Like I swear, who took those pictures... \*~~Refuses to check the file history~~\*
 
 We can't wait to hear your feedback!
+
+You can comment about this blog post on GitHub Discussions [here](https://github.com/LogicalSimulator/LogicalSimulatorCommunity/discussions/14).
