@@ -9,7 +9,7 @@ export default function AddRemoveCommand(yarg: yargs.Argv): yargs.Argv {
     {
       type: {
         alias: "t",
-        desc: "The type of thing to add.",
+        desc: "The type of thing to remove.",
         choices: ["examples", "community"] as const,
         demandOption: true,
       },
