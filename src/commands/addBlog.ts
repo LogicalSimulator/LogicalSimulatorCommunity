@@ -65,8 +65,10 @@ export default function AddAddBlogCommand(yarg: yargs.Argv): yargs.Argv {
       const newPostMdPath = path.join(newPostDirPath, "post.md");
       const newPostPreviewMdPath = path.join(newPostDirPath, "preview.md");
       const infoPath = path.join(newPostDirPath, "info.json");
+      const assetsDirPath = path.join(newPostDirPath, "assets");
 
       fs.mkdirSync(newPostDirPath);
+      fs.mkdirSync(assetsDirPath);
 
       for (const path of [newPostMdPath, newPostPreviewMdPath]) {
         fs.writeFileSync(path, "");
