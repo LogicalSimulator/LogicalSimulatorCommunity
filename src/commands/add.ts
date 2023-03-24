@@ -5,7 +5,7 @@ import yargs from "yargs";
 export default function AddAddCommand(yarg: yargs.Argv): yargs.Argv {
   return yarg.command(
     "add <key>",
-    "Helper to add an example, community circuit, or blog post to the Community repository.",
+    "Helper to add an example or community circuit to the Community repository.",
     {
       type: {
         alias: "t",

@@ -5,7 +5,7 @@ import yargs from "yargs";
 export default function AddRemoveCommand(yarg: yargs.Argv): yargs.Argv {
   return yarg.command(
     "remove <key>",
-    "Helper to remove an example, community circuit, or blog post to the Community repository.",
+    "Helper to remove an example or community circuit from the Community repository.",
     {
       type: {
         alias: "t",

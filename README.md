@@ -8,7 +8,7 @@ The community repository for [Logical Simulator](https://www.logical-simulator.c
 
 If you want to add an example or community circuit, you can [file an issue](https://github.com/LogicalSimulator/LogicalSimulatorCommunity/issues/new/choose) for that. If you want to do it yourself, we have a small CLI helper that will create and update the neccessary files, allowing you to type or paste in the new content!
 
-If `yarn` doesn't work, you may have to prefix the commands with `npx`. 
+If `yarn` doesn't work, you may have to prefix the commands with `npx`.
 
 ### Install
 
@@ -17,7 +17,7 @@ If `yarn` doesn't work, you may have to prefix the commands with `npx`.
 
 ### Usage
 
-Run `yarn run logicalSimulatorCommunityCLI`. 
+Run `yarn run logicalSimulatorCommunityCLI`.
 
 An example command to add a circuit:
 
@@ -25,9 +25,9 @@ An example command to add a circuit:
 $ yarn run logicalSimulatorCommunityCLI add eightBitMemoryCell -t example -n "Eight-bit memory cell" -a "UnsignedArduino" --githubProfileURL "https://github.com/UnsignedArduino" --originalPostURL "https://github.com/LogicalSimulator/LogicalSimulatorCommunity/issues/5"
 ```
 
-It is recommended to specify the author's GitHub profile URL and the link to the original post, as it shows up in the examples or community circuits page. 
+It is recommended to specify the author's GitHub profile URL and the link to the original post, as it shows up in the examples or community circuits page.
 
-After running the command, there will be additional instructions specifying which files to add which content. 
+After running the command, there will be additional instructions specifying which files to add which content.
 
 ### Help
 
@@ -48,13 +48,13 @@ Options:
   --version  Show version number                                     [boolean]
   --help     Show help                                               [boolean]
 ```
+
 ```
 $ yarn run logicalSimulatorCommunityCLI add --help
 
 main.js add <key>
 
-Helper to add an example, community circuit, or blog post to the Community
-repository.
+Helper to add an example or community circuit to the Community repository.
 
 Options:
       --version           Show version number                        [boolean]
@@ -67,12 +67,13 @@ Options:
       --originalPostURL   The original post URL for example or community
                           circuit.                                    [string]
 ```
+
 ```
 $ yarn run logicalSimulatorCommunityCLI remove --help
 
 main.js remove <key>
 
-Helper to remove an example, community circuit, or blog post to the Community
+Helper to remove an example or community circuit from the Community
 repository.
 
 Options:
