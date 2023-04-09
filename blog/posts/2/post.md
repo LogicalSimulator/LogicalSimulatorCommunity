@@ -15,3 +15,5 @@ You can also convert a truth table to components as well, sort of the opposite o
 Please note that both tools are currently in beta, evident by the badge in their name, due to the limited testing we have performed so far. Also note that as a whole, the beta site will change often, and it should not be used for projects you wish to keep! If you do use it, feel free to report bugs to us, either on the [community repository](https://github.com/LogicalSimulator/LogicalSimulatorCommunity/issues) or by emailing [logicalsimulator@gmail.com](mailto:logicalsimulator@gmail.com).
 
 You can find both of these tools on the beta site at [https://beta.logical-simulator.com/](https://beta.logical-simulator.com/).
+
+You can comment about this blog post on GitHub Discussions [here](https://github.com/LogicalSimulator/LogicalSimulatorCommunity/discussions/16).
