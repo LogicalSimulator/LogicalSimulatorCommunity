@@ -9,6 +9,7 @@
     "Countup timer": "countupTimer",
     "Countdown timer": "countdownTimer",
     "One bit comparator": "oneBitComparator",
-    "Two bit comparator": "twoBitComparator"
+    "Two bit comparator": "twoBitComparator",
+    "Four bit comparator": "fourBitComparator"
   }
 }
