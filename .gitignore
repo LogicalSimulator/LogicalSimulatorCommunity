@@ -39,6 +39,9 @@ next-env.d.ts
 # vscode
 .vscode/
 
+# webstorm
+.idea/
+
 # replit
 .replit
 replit.nix
